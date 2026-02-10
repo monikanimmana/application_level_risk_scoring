@@ -1,2 +1,7 @@
-from rest_framework import serializers
-from .models import *
+from django.urls import path
+from . views import *
+
+urlpatterns = [
+    path('login/',login_view, name = "login"),
+    path('register/', Register, name = "register"),
+]
